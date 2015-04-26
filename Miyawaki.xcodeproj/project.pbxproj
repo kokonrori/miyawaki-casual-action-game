@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0275871B4AEA9F0057B0ED /* AnimatingSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275281B4AEA9F0057B0ED /* AnimatingSprite.swift */; };
+		FB0275881B4AEA9F0057B0ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275291B4AEA9F0057B0ED /* AppDelegate.swift */; };
+		FB0275891B4AEA9F0057B0ED /* Breakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02752A1B4AEA9F0057B0ED /* Breakable.swift */; };
+		FB02758A1B4AEA9F0057B0ED /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02752B1B4AEA9F0057B0ED /* Dog.swift */; };
+		FB02758B1B4AEA9F0057B0ED /* RedDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02752C1B4AEA9F0057B0ED /* RedDog.swift */; };
+		FB02758C1B4AEA9F0057B0ED /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02752D1B4AEA9F0057B0ED /* GameScene.swift */; };
+		FB02758D1B4AEA9F0057B0ED /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02752E1B4AEA9F0057B0ED /* GameViewController.swift */; };
+		FB02758E1B4AEA9F0057B0ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB02752F1B4AEA9F0057B0ED /* Images.xcassets */; };
+		FB0275921B4AEA9F0057B0ED /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275371B4AEA9F0057B0ED /* Player.swift */; };
+		FB0275931B4AEA9F0057B0ED /* characters.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB02753B1B4AEA9F0057B0ED /* characters.atlas */; };
+		FB0275941B4AEA9F0057B0ED /* sakura1.png in Resources */ = {isa = PBXBuildFile; fileRef = FB02753C1B4AEA9F0057B0ED /* sakura1.png */; };
+		FB0275951B4AEA9F0057B0ED /* sakura2.png in Resources */ = {isa = PBXBuildFile; fileRef = FB02753D1B4AEA9F0057B0ED /* sakura2.png */; };
+		FB0275961B4AEA9F0057B0ED /* sakura3.png in Resources */ = {isa = PBXBuildFile; fileRef = FB02753E1B4AEA9F0057B0ED /* sakura3.png */; };
+		FB0275971B4AEA9F0057B0ED /* scenery.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FB02753F1B4AEA9F0057B0ED /* scenery.atlas */; };
+		FB0275981B4AEA9F0057B0ED /* DogSplatter.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB0275411B4AEA9F0057B0ED /* DogSplatter.sks */; };
+		FB02759B1B4AEA9F0057B0ED /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0275441B4AEA9F0057B0ED /* heart.png */; };
+		FB02759D1B4AEA9F0057B0ED /* PlayerHitWall.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB0275461B4AEA9F0057B0ED /* PlayerHitWall.sks */; };
+		FB02759E1B4AEA9F0057B0ED /* PlayerTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB0275471B4AEA9F0057B0ED /* PlayerTrail.sks */; };
+		FB0275A01B4AEA9F0057B0ED /* Spark.png in Resources */ = {isa = PBXBuildFile; fileRef = FB0275491B4AEA9F0057B0ED /* Spark.png */; };
+		FB0275A11B4AEA9F0057B0ED /* Splat.png in Resources */ = {isa = PBXBuildFile; fileRef = FB02754A1B4AEA9F0057B0ED /* Splat.png */; };
+		FB0275A21B4AEA9F0057B0ED /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = FB02754B1B4AEA9F0057B0ED /* Star.png */; };
+		FB0275A31B4AEA9F0057B0ED /* SweetsSmash.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB02754C1B4AEA9F0057B0ED /* SweetsSmash.sks */; };
+		FB0275A41B4AEA9F0057B0ED /* WaterDrop.png in Resources */ = {isa = PBXBuildFile; fileRef = FB02754D1B4AEA9F0057B0ED /* WaterDrop.png */; };
+		FB0275A51B4AEA9F0057B0ED /* DrownRedDog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02754F1B4AEA9F0057B0ED /* DrownRedDog.mp3 */; };
+		FB0275A61B4AEA9F0057B0ED /* HitRedDog.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275501B4AEA9F0057B0ED /* HitRedDog.mp3 */; };
+		FB0275A71B4AEA9F0057B0ED /* HitSweets.wav in Resources */ = {isa = PBXBuildFile; fileRef = FB0275511B4AEA9F0057B0ED /* HitSweets.wav */; };
+		FB0275A81B4AEA9F0057B0ED /* HitWall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275521B4AEA9F0057B0ED /* HitWall.mp3 */; };
+		FB0275A91B4AEA9F0057B0ED /* HitWater.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275531B4AEA9F0057B0ED /* HitWater.mp3 */; };
+		FB0275AA1B4AEA9F0057B0ED /* KillDog-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275541B4AEA9F0057B0ED /* KillDog-1.mp3 */; };
+		FB0275AB1B4AEA9F0057B0ED /* KillDog-10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275551B4AEA9F0057B0ED /* KillDog-10.mp3 */; };
+		FB0275AC1B4AEA9F0057B0ED /* KillDog-11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275561B4AEA9F0057B0ED /* KillDog-11.mp3 */; };
+		FB0275AD1B4AEA9F0057B0ED /* KillDog-12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275571B4AEA9F0057B0ED /* KillDog-12.mp3 */; };
+		FB0275AE1B4AEA9F0057B0ED /* KillDog-2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275581B4AEA9F0057B0ED /* KillDog-2.mp3 */; };
+		FB0275AF1B4AEA9F0057B0ED /* KillDog-3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275591B4AEA9F0057B0ED /* KillDog-3.mp3 */; };
+		FB0275B01B4AEA9F0057B0ED /* KillDog-4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02755A1B4AEA9F0057B0ED /* KillDog-4.mp3 */; };
+		FB0275B11B4AEA9F0057B0ED /* KillDog-5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02755B1B4AEA9F0057B0ED /* KillDog-5.mp3 */; };
+		FB0275B21B4AEA9F0057B0ED /* KillDog-6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02755C1B4AEA9F0057B0ED /* KillDog-6.mp3 */; };
+		FB0275B31B4AEA9F0057B0ED /* KillDog-7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02755D1B4AEA9F0057B0ED /* KillDog-7.mp3 */; };
+		FB0275B41B4AEA9F0057B0ED /* KillDog-8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02755E1B4AEA9F0057B0ED /* KillDog-8.mp3 */; };
+		FB0275B51B4AEA9F0057B0ED /* KillDog-9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB02755F1B4AEA9F0057B0ED /* KillDog-9.mp3 */; };
+		FB0275B61B4AEA9F0057B0ED /* Lose.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275601B4AEA9F0057B0ED /* Lose.mp3 */; };
+		FB0275B71B4AEA9F0057B0ED /* Majisuka Fight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275611B4AEA9F0057B0ED /* Majisuka Fight.mp3 */; };
+		FB0275B81B4AEA9F0057B0ED /* Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275621B4AEA9F0057B0ED /* Music.mp3 */; };
+		FB0275B91B4AEA9F0057B0ED /* PlayerMove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275631B4AEA9F0057B0ED /* PlayerMove.mp3 */; };
+		FB0275BA1B4AEA9F0057B0ED /* TickTock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275641B4AEA9F0057B0ED /* TickTock.mp3 */; };
+		FB0275BB1B4AEA9F0057B0ED /* Win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB0275651B4AEA9F0057B0ED /* Win.mp3 */; };
+		FB0275BC1B4AEA9F0057B0ED /* map-background.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0275671B4AEA9F0057B0ED /* map-background.txt */; };
+		FB0275BD1B4AEA9F0057B0ED /* map-breakables.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0275681B4AEA9F0057B0ED /* map-breakables.txt */; };
+		FB0275BE1B4AEA9F0057B0ED /* map-dogs.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0275691B4AEA9F0057B0ED /* map-dogs.txt */; };
+		FB0275BF1B4AEA9F0057B0ED /* Maps.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB02756A1B4AEA9F0057B0ED /* Maps.plist */; };
+		FB0275CB1B4AEA9F0057B0ED /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275781B4AEA9F0057B0ED /* CGFloat+Extensions.swift */; };
+		FB0275CC1B4AEA9F0057B0ED /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275791B4AEA9F0057B0ED /* CGPoint+Extensions.swift */; };
+		FB0275CD1B4AEA9F0057B0ED /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02757A1B4AEA9F0057B0ED /* CGVector+Extensions.swift */; };
+		FB0275CE1B4AEA9F0057B0ED /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02757B1B4AEA9F0057B0ED /* Int+Extensions.swift */; };
+		FB0275CF1B4AEA9F0057B0ED /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02757C1B4AEA9F0057B0ED /* SKAction+Extensions.swift */; };
+		FB0275D01B4AEA9F0057B0ED /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02757D1B4AEA9F0057B0ED /* SKAction+SpecialEffects.swift */; };
+		FB0275D11B4AEA9F0057B0ED /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02757E1B4AEA9F0057B0ED /* SKColor+Extensions.swift */; };
+		FB0275D21B4AEA9F0057B0ED /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB02757F1B4AEA9F0057B0ED /* SKNode+Extensions.swift */; };
+		FB0275D31B4AEA9F0057B0ED /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275801B4AEA9F0057B0ED /* SKTAudio.swift */; };
+		FB0275D41B4AEA9F0057B0ED /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275811B4AEA9F0057B0ED /* SKTEffects.swift */; };
+		FB0275D51B4AEA9F0057B0ED /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275821B4AEA9F0057B0ED /* SKTTimingFunctions.swift */; };
+		FB0275D61B4AEA9F0057B0ED /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275831B4AEA9F0057B0ED /* Vector3.swift */; };
+		FB0275D71B4AEA9F0057B0ED /* TileMapLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275841B4AEA9F0057B0ED /* TileMapLayer.swift */; };
+		FB0275D91B4AEA9F0057B0ED /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275861B4AEA9F0057B0ED /* Types.swift */; };
+		FB0275DB1B4AEAC90057B0ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB0275DA1B4AEAC90057B0ED /* Info.plist */; };
+		FB0275E61B4AEC0E0057B0ED /* Miyawaki_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0275E51B4AEC0E0057B0ED /* Miyawaki_Tests.swift */; };
+		FBED38A81B4CC5EB001DE8F3 /* TileMapLayerLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBED38A71B4CC5EB001DE8F3 /* TileMapLayerLoader.swift */; };
+		FBFADE411B4AF16400CF28EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBFADE3D1B4AF16400CF28EA /* LaunchScreen.xib */; };
+		FBFADE421B4AF16400CF28EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBFADE3F1B4AF16400CF28EA /* Main.storyboard */; };
+		FBFADE441B4AFFEE00CF28EA /* Rock.png in Resources */ = {isa = PBXBuildFile; fileRef = FBFADE431B4AFFEE00CF28EA /* Rock.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB0275E71B4AEC0E0057B0ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95032EF319C15C7E0067E26A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95032EFA19C15C7E0067E26A;
+			remoteInfo = Miyawaki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95032EFB19C15C7E0067E26A /* Miyawaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miyawaki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0275281B4AEA9F0057B0ED /* AnimatingSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatingSprite.swift; path = Miyawaki/AnimatingSprite.swift; sourceTree = SOURCE_ROOT; };
+		FB0275291B4AEA9F0057B0ED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Miyawaki/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		FB02752A1B4AEA9F0057B0ED /* Breakable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Breakable.swift; path = Miyawaki/Breakable.swift; sourceTree = SOURCE_ROOT; };
+		FB02752B1B4AEA9F0057B0ED /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dog.swift; path = Miyawaki/Dog.swift; sourceTree = SOURCE_ROOT; };
+		FB02752C1B4AEA9F0057B0ED /* RedDog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RedDog.swift; path = Miyawaki/RedDog.swift; sourceTree = SOURCE_ROOT; };
+		FB02752D1B4AEA9F0057B0ED /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = Miyawaki/GameScene.swift; sourceTree = SOURCE_ROOT; };
+		FB02752E1B4AEA9F0057B0ED /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = Miyawaki/GameViewController.swift; sourceTree = SOURCE_ROOT; };
+		FB02752F1B4AEA9F0057B0ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Miyawaki/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		FB0275371B4AEA9F0057B0ED /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Miyawaki/Player.swift; sourceTree = SOURCE_ROOT; };
+		FB02753B1B4AEA9F0057B0ED /* characters.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = characters.atlas; sourceTree = "<group>"; };
+		FB02753C1B4AEA9F0057B0ED /* sakura1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakura1.png; sourceTree = "<group>"; };
+		FB02753D1B4AEA9F0057B0ED /* sakura2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakura2.png; sourceTree = "<group>"; };
+		FB02753E1B4AEA9F0057B0ED /* sakura3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sakura3.png; sourceTree = "<group>"; };
+		FB02753F1B4AEA9F0057B0ED /* scenery.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = scenery.atlas; sourceTree = "<group>"; };
+		FB0275411B4AEA9F0057B0ED /* DogSplatter.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = DogSplatter.sks; sourceTree = "<group>"; };
+		FB0275441B4AEA9F0057B0ED /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		FB0275461B4AEA9F0057B0ED /* PlayerHitWall.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerHitWall.sks; sourceTree = "<group>"; };
+		FB0275471B4AEA9F0057B0ED /* PlayerTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = PlayerTrail.sks; sourceTree = "<group>"; };
+		FB0275491B4AEA9F0057B0ED /* Spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spark.png; sourceTree = "<group>"; };
+		FB02754A1B4AEA9F0057B0ED /* Splat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splat.png; sourceTree = "<group>"; };
+		FB02754B1B4AEA9F0057B0ED /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		FB02754C1B4AEA9F0057B0ED /* SweetsSmash.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SweetsSmash.sks; sourceTree = "<group>"; };
+		FB02754D1B4AEA9F0057B0ED /* WaterDrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WaterDrop.png; sourceTree = "<group>"; };
+		FB02754F1B4AEA9F0057B0ED /* DrownRedDog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DrownRedDog.mp3; sourceTree = "<group>"; };
+		FB0275501B4AEA9F0057B0ED /* HitRedDog.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitRedDog.mp3; sourceTree = "<group>"; };
+		FB0275511B4AEA9F0057B0ED /* HitSweets.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HitSweets.wav; sourceTree = "<group>"; };
+		FB0275521B4AEA9F0057B0ED /* HitWall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitWall.mp3; sourceTree = "<group>"; };
+		FB0275531B4AEA9F0057B0ED /* HitWater.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HitWater.mp3; sourceTree = "<group>"; };
+		FB0275541B4AEA9F0057B0ED /* KillDog-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-1.mp3"; sourceTree = "<group>"; };
+		FB0275551B4AEA9F0057B0ED /* KillDog-10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-10.mp3"; sourceTree = "<group>"; };
+		FB0275561B4AEA9F0057B0ED /* KillDog-11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-11.mp3"; sourceTree = "<group>"; };
+		FB0275571B4AEA9F0057B0ED /* KillDog-12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-12.mp3"; sourceTree = "<group>"; };
+		FB0275581B4AEA9F0057B0ED /* KillDog-2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-2.mp3"; sourceTree = "<group>"; };
+		FB0275591B4AEA9F0057B0ED /* KillDog-3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-3.mp3"; sourceTree = "<group>"; };
+		FB02755A1B4AEA9F0057B0ED /* KillDog-4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-4.mp3"; sourceTree = "<group>"; };
+		FB02755B1B4AEA9F0057B0ED /* KillDog-5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-5.mp3"; sourceTree = "<group>"; };
+		FB02755C1B4AEA9F0057B0ED /* KillDog-6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-6.mp3"; sourceTree = "<group>"; };
+		FB02755D1B4AEA9F0057B0ED /* KillDog-7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-7.mp3"; sourceTree = "<group>"; };
+		FB02755E1B4AEA9F0057B0ED /* KillDog-8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-8.mp3"; sourceTree = "<group>"; };
+		FB02755F1B4AEA9F0057B0ED /* KillDog-9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "KillDog-9.mp3"; sourceTree = "<group>"; };
+		FB0275601B4AEA9F0057B0ED /* Lose.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lose.mp3; sourceTree = "<group>"; };
+		FB0275611B4AEA9F0057B0ED /* Majisuka Fight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Majisuka Fight.mp3"; sourceTree = "<group>"; };
+		FB0275621B4AEA9F0057B0ED /* Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Music.mp3; sourceTree = "<group>"; };
+		FB0275631B4AEA9F0057B0ED /* PlayerMove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PlayerMove.mp3; sourceTree = "<group>"; };
+		FB0275641B4AEA9F0057B0ED /* TickTock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TickTock.mp3; sourceTree = "<group>"; };
+		FB0275651B4AEA9F0057B0ED /* Win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Win.mp3; sourceTree = "<group>"; };
+		FB0275671B4AEA9F0057B0ED /* map-background.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "map-background.txt"; sourceTree = "<group>"; };
+		FB0275681B4AEA9F0057B0ED /* map-breakables.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "map-breakables.txt"; sourceTree = "<group>"; };
+		FB0275691B4AEA9F0057B0ED /* map-dogs.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "map-dogs.txt"; sourceTree = "<group>"; };
+		FB02756A1B4AEA9F0057B0ED /* Maps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Maps.plist; sourceTree = "<group>"; };
+		FB0275781B4AEA9F0057B0ED /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		FB0275791B4AEA9F0057B0ED /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		FB02757A1B4AEA9F0057B0ED /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		FB02757B1B4AEA9F0057B0ED /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		FB02757C1B4AEA9F0057B0ED /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		FB02757D1B4AEA9F0057B0ED /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		FB02757E1B4AEA9F0057B0ED /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		FB02757F1B4AEA9F0057B0ED /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		FB0275801B4AEA9F0057B0ED /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		FB0275811B4AEA9F0057B0ED /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		FB0275821B4AEA9F0057B0ED /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		FB0275831B4AEA9F0057B0ED /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		FB0275841B4AEA9F0057B0ED /* TileMapLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TileMapLayer.swift; path = Miyawaki/TileMapLayer.swift; sourceTree = SOURCE_ROOT; };
+		FB0275861B4AEA9F0057B0ED /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Types.swift; path = Miyawaki/Types.swift; sourceTree = SOURCE_ROOT; };
+		FB0275DA1B4AEAC90057B0ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Miyawaki/Info.plist; sourceTree = SOURCE_ROOT; };
+		FB0275E11B4AEC0E0057B0ED /* Miyawaki Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Miyawaki Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0275E41B4AEC0E0057B0ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0275E51B4AEC0E0057B0ED /* Miyawaki_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miyawaki_Tests.swift; sourceTree = "<group>"; };
+		FBED38A71B4CC5EB001DE8F3 /* TileMapLayerLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMapLayerLoader.swift; sourceTree = "<group>"; };
+		FBFADE3E1B4AF16400CF28EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Miyawaki/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		FBFADE401B4AF16400CF28EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Miyawaki/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		FBFADE431B4AFFEE00CF28EA /* Rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rock.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95032EF819C15C7E0067E26A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0275DE1B4AEC0E0057B0ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95032EF219C15C7E0067E26A = {
+			isa = PBXGroup;
+			children = (
+				95032EFD19C15C7E0067E26A /* Miyawaki */,
+				FB0275E21B4AEC0E0057B0ED /* Miyawaki Tests */,
+				95032EFC19C15C7E0067E26A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95032EFC19C15C7E0067E26A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95032EFB19C15C7E0067E26A /* Miyawaki.app */,
+				FB0275E11B4AEC0E0057B0ED /* Miyawaki Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95032EFD19C15C7E0067E26A /* Miyawaki */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275771B4AEA9F0057B0ED /* SKTUtils */,
+				FB0275381B4AEA9F0057B0ED /* Resources */,
+				FB0275281B4AEA9F0057B0ED /* AnimatingSprite.swift */,
+				FB0275291B4AEA9F0057B0ED /* AppDelegate.swift */,
+				FB02752A1B4AEA9F0057B0ED /* Breakable.swift */,
+				FB02752B1B4AEA9F0057B0ED /* Dog.swift */,
+				FB02752C1B4AEA9F0057B0ED /* RedDog.swift */,
+				FB02752D1B4AEA9F0057B0ED /* GameScene.swift */,
+				FB02752E1B4AEA9F0057B0ED /* GameViewController.swift */,
+				FB0275371B4AEA9F0057B0ED /* Player.swift */,
+				FB0275841B4AEA9F0057B0ED /* TileMapLayer.swift */,
+				FB0275861B4AEA9F0057B0ED /* Types.swift */,
+				FBFADE3F1B4AF16400CF28EA /* Main.storyboard */,
+				FBFADE3D1B4AF16400CF28EA /* LaunchScreen.xib */,
+				95032EFE19C15C7E0067E26A /* Supporting Files */,
+				FB02752F1B4AEA9F0057B0ED /* Images.xcassets */,
+			);
+			name = Miyawaki;
+			path = PestControl;
+			sourceTree = "<group>";
+		};
+		95032EFE19C15C7E0067E26A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275DA1B4AEAC90057B0ED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB0275381B4AEA9F0057B0ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275391B4AEA9F0057B0ED /* Art */,
+				FB0275661B4AEA9F0057B0ED /* Levels */,
+			);
+			name = Resources;
+			path = Miyawaki/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		FB0275391B4AEA9F0057B0ED /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				FB02753A1B4AEA9F0057B0ED /* Images */,
+				FB0275401B4AEA9F0057B0ED /* Particles */,
+				FB02754E1B4AEA9F0057B0ED /* Sounds */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		FB02753A1B4AEA9F0057B0ED /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB02753B1B4AEA9F0057B0ED /* characters.atlas */,
+				FB02753C1B4AEA9F0057B0ED /* sakura1.png */,
+				FB02753D1B4AEA9F0057B0ED /* sakura2.png */,
+				FB02753E1B4AEA9F0057B0ED /* sakura3.png */,
+				FB02753F1B4AEA9F0057B0ED /* scenery.atlas */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FB0275401B4AEA9F0057B0ED /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275411B4AEA9F0057B0ED /* DogSplatter.sks */,
+				FB0275441B4AEA9F0057B0ED /* heart.png */,
+				FB0275461B4AEA9F0057B0ED /* PlayerHitWall.sks */,
+				FB0275471B4AEA9F0057B0ED /* PlayerTrail.sks */,
+				FBFADE431B4AFFEE00CF28EA /* Rock.png */,
+				FB0275491B4AEA9F0057B0ED /* Spark.png */,
+				FB02754A1B4AEA9F0057B0ED /* Splat.png */,
+				FB02754B1B4AEA9F0057B0ED /* Star.png */,
+				FB02754C1B4AEA9F0057B0ED /* SweetsSmash.sks */,
+				FB02754D1B4AEA9F0057B0ED /* WaterDrop.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		FB02754E1B4AEA9F0057B0ED /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB02754F1B4AEA9F0057B0ED /* DrownRedDog.mp3 */,
+				FB0275501B4AEA9F0057B0ED /* HitRedDog.mp3 */,
+				FB0275511B4AEA9F0057B0ED /* HitSweets.wav */,
+				FB0275521B4AEA9F0057B0ED /* HitWall.mp3 */,
+				FB0275531B4AEA9F0057B0ED /* HitWater.mp3 */,
+				FB0275541B4AEA9F0057B0ED /* KillDog-1.mp3 */,
+				FB0275551B4AEA9F0057B0ED /* KillDog-10.mp3 */,
+				FB0275561B4AEA9F0057B0ED /* KillDog-11.mp3 */,
+				FB0275571B4AEA9F0057B0ED /* KillDog-12.mp3 */,
+				FB0275581B4AEA9F0057B0ED /* KillDog-2.mp3 */,
+				FB0275591B4AEA9F0057B0ED /* KillDog-3.mp3 */,
+				FB02755A1B4AEA9F0057B0ED /* KillDog-4.mp3 */,
+				FB02755B1B4AEA9F0057B0ED /* KillDog-5.mp3 */,
+				FB02755C1B4AEA9F0057B0ED /* KillDog-6.mp3 */,
+				FB02755D1B4AEA9F0057B0ED /* KillDog-7.mp3 */,
+				FB02755E1B4AEA9F0057B0ED /* KillDog-8.mp3 */,
+				FB02755F1B4AEA9F0057B0ED /* KillDog-9.mp3 */,
+				FB0275601B4AEA9F0057B0ED /* Lose.mp3 */,
+				FB0275611B4AEA9F0057B0ED /* Majisuka Fight.mp3 */,
+				FB0275621B4AEA9F0057B0ED /* Music.mp3 */,
+				FB0275631B4AEA9F0057B0ED /* PlayerMove.mp3 */,
+				FB0275641B4AEA9F0057B0ED /* TickTock.mp3 */,
+				FB0275651B4AEA9F0057B0ED /* Win.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		FB0275661B4AEA9F0057B0ED /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275671B4AEA9F0057B0ED /* map-background.txt */,
+				FB0275681B4AEA9F0057B0ED /* map-breakables.txt */,
+				FB0275691B4AEA9F0057B0ED /* map-dogs.txt */,
+				FB02756A1B4AEA9F0057B0ED /* Maps.plist */,
+				FBED38A71B4CC5EB001DE8F3 /* TileMapLayerLoader.swift */,
+			);
+			path = Levels;
+			sourceTree = "<group>";
+		};
+		FB0275771B4AEA9F0057B0ED /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275781B4AEA9F0057B0ED /* CGFloat+Extensions.swift */,
+				FB0275791B4AEA9F0057B0ED /* CGPoint+Extensions.swift */,
+				FB02757A1B4AEA9F0057B0ED /* CGVector+Extensions.swift */,
+				FB02757B1B4AEA9F0057B0ED /* Int+Extensions.swift */,
+				FB02757C1B4AEA9F0057B0ED /* SKAction+Extensions.swift */,
+				FB02757D1B4AEA9F0057B0ED /* SKAction+SpecialEffects.swift */,
+				FB02757E1B4AEA9F0057B0ED /* SKColor+Extensions.swift */,
+				FB02757F1B4AEA9F0057B0ED /* SKNode+Extensions.swift */,
+				FB0275801B4AEA9F0057B0ED /* SKTAudio.swift */,
+				FB0275811B4AEA9F0057B0ED /* SKTEffects.swift */,
+				FB0275821B4AEA9F0057B0ED /* SKTTimingFunctions.swift */,
+				FB0275831B4AEA9F0057B0ED /* Vector3.swift */,
+			);
+			name = SKTUtils;
+			path = Miyawaki/SKTUtils;
+			sourceTree = SOURCE_ROOT;
+		};
+		FB0275E21B4AEC0E0057B0ED /* Miyawaki Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275E51B4AEC0E0057B0ED /* Miyawaki_Tests.swift */,
+				FB0275E31B4AEC0E0057B0ED /* Supporting Files */,
+			);
+			path = "Miyawaki Tests";
+			sourceTree = "<group>";
+		};
+		FB0275E31B4AEC0E0057B0ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB0275E41B4AEC0E0057B0ED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95032EFA19C15C7E0067E26A /* Miyawaki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95032F1E19C15C7E0067E26A /* Build configuration list for PBXNativeTarget "Miyawaki" */;
+			buildPhases = (
+				95032EF719C15C7E0067E26A /* Sources */,
+				95032EF819C15C7E0067E26A /* Frameworks */,
+				95032EF919C15C7E0067E26A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Miyawaki;
+			productName = PestControl;
+			productReference = 95032EFB19C15C7E0067E26A /* Miyawaki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB0275E01B4AEC0E0057B0ED /* Miyawaki Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0275E91B4AEC0E0057B0ED /* Build configuration list for PBXNativeTarget "Miyawaki Tests" */;
+			buildPhases = (
+				FB0275DD1B4AEC0E0057B0ED /* Sources */,
+				FB0275DE1B4AEC0E0057B0ED /* Frameworks */,
+				FB0275DF1B4AEC0E0057B0ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB0275E81B4AEC0E0057B0ED /* PBXTargetDependency */,
+			);
+			name = "Miyawaki Tests";
+			productName = "Miyawaki Tests";
+			productReference = FB0275E11B4AEC0E0057B0ED /* Miyawaki Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95032EF319C15C7E0067E26A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					95032EFA19C15C7E0067E26A = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = F745D6FWBD;
+					};
+					FB0275E01B4AEC0E0057B0ED = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 95032EFA19C15C7E0067E26A;
+					};
+				};
+			};
+			buildConfigurationList = 95032EF619C15C7E0067E26A /* Build configuration list for PBXProject "Miyawaki" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95032EF219C15C7E0067E26A;
+			productRefGroup = 95032EFC19C15C7E0067E26A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95032EFA19C15C7E0067E26A /* Miyawaki */,
+				FB0275E01B4AEC0E0057B0ED /* Miyawaki Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95032EF919C15C7E0067E26A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB02759B1B4AEA9F0057B0ED /* heart.png in Resources */,
+				FB0275981B4AEA9F0057B0ED /* DogSplatter.sks in Resources */,
+				FB0275A01B4AEA9F0057B0ED /* Spark.png in Resources */,
+				FB02759D1B4AEA9F0057B0ED /* PlayerHitWall.sks in Resources */,
+				FB0275BA1B4AEA9F0057B0ED /* TickTock.mp3 in Resources */,
+				FB0275A41B4AEA9F0057B0ED /* WaterDrop.png in Resources */,
+				FB0275B71B4AEA9F0057B0ED /* Majisuka Fight.mp3 in Resources */,
+				FB0275BD1B4AEA9F0057B0ED /* map-breakables.txt in Resources */,
+				FB0275A71B4AEA9F0057B0ED /* HitSweets.wav in Resources */,
+				FB0275B81B4AEA9F0057B0ED /* Music.mp3 in Resources */,
+				FB0275AB1B4AEA9F0057B0ED /* KillDog-10.mp3 in Resources */,
+				FB02758E1B4AEA9F0057B0ED /* Images.xcassets in Resources */,
+				FBFADE441B4AFFEE00CF28EA /* Rock.png in Resources */,
+				FB0275AC1B4AEA9F0057B0ED /* KillDog-11.mp3 in Resources */,
+				FBFADE411B4AF16400CF28EA /* LaunchScreen.xib in Resources */,
+				FB0275DB1B4AEAC90057B0ED /* Info.plist in Resources */,
+				FB02759E1B4AEA9F0057B0ED /* PlayerTrail.sks in Resources */,
+				FB0275971B4AEA9F0057B0ED /* scenery.atlas in Resources */,
+				FB0275A21B4AEA9F0057B0ED /* Star.png in Resources */,
+				FB0275AD1B4AEA9F0057B0ED /* KillDog-12.mp3 in Resources */,
+				FB0275A51B4AEA9F0057B0ED /* DrownRedDog.mp3 in Resources */,
+				FB0275AA1B4AEA9F0057B0ED /* KillDog-1.mp3 in Resources */,
+				FB0275A61B4AEA9F0057B0ED /* HitRedDog.mp3 in Resources */,
+				FB0275A31B4AEA9F0057B0ED /* SweetsSmash.sks in Resources */,
+				FB0275951B4AEA9F0057B0ED /* sakura2.png in Resources */,
+				FB0275B31B4AEA9F0057B0ED /* KillDog-7.mp3 in Resources */,
+				FB0275B21B4AEA9F0057B0ED /* KillDog-6.mp3 in Resources */,
+				FB0275B61B4AEA9F0057B0ED /* Lose.mp3 in Resources */,
+				FB0275B91B4AEA9F0057B0ED /* PlayerMove.mp3 in Resources */,
+				FB0275BB1B4AEA9F0057B0ED /* Win.mp3 in Resources */,
+				FB0275AF1B4AEA9F0057B0ED /* KillDog-3.mp3 in Resources */,
+				FB0275B01B4AEA9F0057B0ED /* KillDog-4.mp3 in Resources */,
+				FB0275B41B4AEA9F0057B0ED /* KillDog-8.mp3 in Resources */,
+				FB0275A91B4AEA9F0057B0ED /* HitWater.mp3 in Resources */,
+				FB0275941B4AEA9F0057B0ED /* sakura1.png in Resources */,
+				FB0275931B4AEA9F0057B0ED /* characters.atlas in Resources */,
+				FB0275B51B4AEA9F0057B0ED /* KillDog-9.mp3 in Resources */,
+				FB0275BC1B4AEA9F0057B0ED /* map-background.txt in Resources */,
+				FBFADE421B4AF16400CF28EA /* Main.storyboard in Resources */,
+				FB0275BE1B4AEA9F0057B0ED /* map-dogs.txt in Resources */,
+				FB0275BF1B4AEA9F0057B0ED /* Maps.plist in Resources */,
+				FB0275961B4AEA9F0057B0ED /* sakura3.png in Resources */,
+				FB0275A81B4AEA9F0057B0ED /* HitWall.mp3 in Resources */,
+				FB0275AE1B4AEA9F0057B0ED /* KillDog-2.mp3 in Resources */,
+				FB0275B11B4AEA9F0057B0ED /* KillDog-5.mp3 in Resources */,
+				FB0275A11B4AEA9F0057B0ED /* Splat.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0275DF1B4AEC0E0057B0ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95032EF719C15C7E0067E26A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0275D01B4AEA9F0057B0ED /* SKAction+SpecialEffects.swift in Sources */,
+				FB0275D21B4AEA9F0057B0ED /* SKNode+Extensions.swift in Sources */,
+				FB0275CC1B4AEA9F0057B0ED /* CGPoint+Extensions.swift in Sources */,
+				FB0275881B4AEA9F0057B0ED /* AppDelegate.swift in Sources */,
+				FB0275CF1B4AEA9F0057B0ED /* SKAction+Extensions.swift in Sources */,
+				FB0275D11B4AEA9F0057B0ED /* SKColor+Extensions.swift in Sources */,
+				FB0275871B4AEA9F0057B0ED /* AnimatingSprite.swift in Sources */,
+				FB0275D71B4AEA9F0057B0ED /* TileMapLayer.swift in Sources */,
+				FB0275D51B4AEA9F0057B0ED /* SKTTimingFunctions.swift in Sources */,
+				FBED38A81B4CC5EB001DE8F3 /* TileMapLayerLoader.swift in Sources */,
+				FB0275921B4AEA9F0057B0ED /* Player.swift in Sources */,
+				FB0275CD1B4AEA9F0057B0ED /* CGVector+Extensions.swift in Sources */,
+				FB0275D61B4AEA9F0057B0ED /* Vector3.swift in Sources */,
+				FB0275D41B4AEA9F0057B0ED /* SKTEffects.swift in Sources */,
+				FB02758C1B4AEA9F0057B0ED /* GameScene.swift in Sources */,
+				FB0275891B4AEA9F0057B0ED /* Breakable.swift in Sources */,
+				FB0275CB1B4AEA9F0057B0ED /* CGFloat+Extensions.swift in Sources */,
+				FB0275D31B4AEA9F0057B0ED /* SKTAudio.swift in Sources */,
+				FB02758A1B4AEA9F0057B0ED /* Dog.swift in Sources */,
+				FB0275CE1B4AEA9F0057B0ED /* Int+Extensions.swift in Sources */,
+				FB02758B1B4AEA9F0057B0ED /* RedDog.swift in Sources */,
+				FB0275D91B4AEA9F0057B0ED /* Types.swift in Sources */,
+				FB02758D1B4AEA9F0057B0ED /* GameViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0275DD1B4AEC0E0057B0ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0275E61B4AEC0E0057B0ED /* Miyawaki_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB0275E81B4AEC0E0057B0ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95032EFA19C15C7E0067E26A /* Miyawaki */;
+			targetProxy = FB0275E71B4AEC0E0057B0ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBFADE3D1B4AF16400CF28EA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFADE3E1B4AF16400CF28EA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FBFADE3F1B4AF16400CF28EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBFADE401B4AF16400CF28EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95032F1C19C15C7E0067E26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daisuke Tanaka (EUBB8577V5)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95032F1D19C15C7E0067E26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Daisuke Tanaka (EUBB8577V5)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95032F1F19C15C7E0067E26A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Miyawaki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		95032F2019C15C7E0067E26A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Miyawaki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FB0275EA1B4AEC0E0057B0ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Miyawaki Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miyawaki.app/Miyawaki";
+			};
+			name = Debug;
+		};
+		FB0275EB1B4AEC0E0057B0ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Miyawaki Tests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Miyawaki.app/Miyawaki";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95032EF619C15C7E0067E26A /* Build configuration list for PBXProject "Miyawaki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95032F1C19C15C7E0067E26A /* Debug */,
+				95032F1D19C15C7E0067E26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95032F1E19C15C7E0067E26A /* Build configuration list for PBXNativeTarget "Miyawaki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95032F1F19C15C7E0067E26A /* Debug */,
+				95032F2019C15C7E0067E26A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0275E91B4AEC0E0057B0ED /* Build configuration list for PBXNativeTarget "Miyawaki Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0275EA1B4AEC0E0057B0ED /* Debug */,
+				FB0275EB1B4AEC0E0057B0ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95032EF319C15C7E0067E26A /* Project object */;
+}
