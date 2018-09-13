@@ -1,5 +1,7 @@
 # Miyawaki
 
+![License](https://img.shields.io/github/license/kokonrori/miyawaki-.svg)
+
 > Leveraged Swift/SpriteKit and won a company-wide hackerthon. Miyawaki was used as a basis for a new game project in the company.
 
 
