@@ -6,12 +6,12 @@
 
 ## Story
 
-Angry dogs have invaded the town. You will take the role of Miyawaki（a.k.a. Sakura-san）, a girl one of the top fighters at school. Be Miyawaki and save the town!
+Angry dogs have invaded the town. You will take the role of Miyawaki（a.k.a. Sakura-san）, one of the top fighters at school. Be Miyawaki and save the town!
 
 ## Rules
 
 - **`SMASH all angry dogs`** within 90 seconds. 
-- Be careful of red fire dogs. You can only defeat fire dogs to smash them into the water.
+- Be careful of red fire dogs. You can only defeat fire dogs by smashing them into the water.
 
 ## Demo Play
 
